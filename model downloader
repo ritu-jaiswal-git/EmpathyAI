@@ -1,6 +1,0 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
-model_name = "mistralai/mistral-7b"  # Replace with the exact model name
-model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model.save_pretrained("./mistral_local")
-tokenizer.save_pretrained("./mistral_local")
